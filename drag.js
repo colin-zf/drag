@@ -8,5 +8,6 @@ function fnDrag(id){
 		var ev=ev||event;
 		disX=ev.clientX-oDiv.offsetLeft;
 		disY=ev.clientY-oDiv.offsetTop;
+		var aa=0;
 	};
 }
