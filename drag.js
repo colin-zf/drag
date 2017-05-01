@@ -6,5 +6,7 @@ function fnDrag(id){
 	
 	oDiv.onmousedown=function(ev){
 		var ev=ev||event;
+		disX=ev.clientX-oDiv.offsetLeft;
+		disY=ev.clientY-oDiv.offsetTop;
 	};
 }
