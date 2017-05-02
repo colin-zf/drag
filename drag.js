@@ -8,6 +8,10 @@ function fnDrag(id){
 		var ev=ev||event;
 		disX=ev.pageX-oDiv.offsetLeft;
 		disY=ev.pageY-oDiv.offsetTop;
-		
+		document.onmousemove=function(ev){
+			var ev=ev||event;
+			oDiv.style.left=ev.clientX-disX+"px";
+			oDiv.style.top=ev.clientY-disY+"px";
+		}
 	};
 }
